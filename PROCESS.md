@@ -44,6 +44,7 @@ DimDate (Date Dimension) for time intelligence
 - Month Name
 - Day
 - Weekday 
+- Note: mark as Date table.
 
 FactSales 
 - Row ID
@@ -56,10 +57,32 @@ FactSales
 - Discount 
 - Profit
 
-## 4. DAX Measures
+- created DimDate with DAX CALENDAR function
+- connected FactSales[Order Date] to DimDate[Date]
+- marked DimDate as date table
 
-+ reasoning! todo
+## 4. DAX Measures Created
 
+1. **Total Revenue** = SUM(FactSales[Sales])
+   - Core metric for business performance
+
+2. **Total Profit** = SUM(FactSales[Profit])
+   - Bottom-line profitability
+
+3. **Profit Margin %** = DIVIDE([Total Profit], [Total Revenue], 0)
+   - Efficiency metric showing profit per dollar of revenue
+
+4. **Average Discount %** = AVERAGE(FactSales[Discount])
+   - Tracks discounting behavior
+
+5. **Total Quantity** = SUM(FactSales[Quantity])
+   - Volume metric
+
+6. **YoY Revenue Growth %** = Uses SAMEPERIODLASTYEAR for time intelligence
+   - Shows growth compared to prior year same period
+
+7. **Customer Count** = DISTINCTCOUNT(FactSales[Customer ID])
+   - Unique customer tracking
 ## 5. Dashboard Design
 - Visual choices and why
 - Layout decisions
