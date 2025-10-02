@@ -44,7 +44,10 @@ DimDate (Date Dimension) for time intelligence
 - Month Name
 - Day
 - Weekday 
-- Note: mark as Date table.
+Notes
+- created with DAX CALENDAR function
+- connected FactSales[Order Date] to DimDate[Date]
+- marked DimDate as date table
 
 FactSales 
 - Row ID
@@ -57,9 +60,7 @@ FactSales
 - Discount 
 - Profit
 
-- created DimDate with DAX CALENDAR function
-- connected FactSales[Order Date] to DimDate[Date]
-- marked DimDate as date table
+
 
 ## 4. DAX Measures Created
 
@@ -84,9 +85,22 @@ FactSales
 7. **Customer Count** = DISTINCTCOUNT(FactSales[Customer ID])
    - Unique customer tracking
 ## 5. Dashboard Design
-- Visual choices and why
-- Layout decisions
+
+Canvas:
+- Background: #001529 (Dark Navy)
+
+KPI Cards:
+- Background: #0A2540 (Light Navy)
+- Shadow: Bottom 
+- Rounded Corners: 8px
+- Text: Seoge UI 36, Bold
+- Category Label:
+    - #A8B2C7 (Light Gray)
+- Accent Bar:
+    - #D4AF37 (Gold)
+
 - Interactivity
+
 
 ## 6. Insights & Recommendations
 - discoveries, etc.
