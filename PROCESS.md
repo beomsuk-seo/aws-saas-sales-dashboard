@@ -18,7 +18,7 @@ A B2B SaaS company is experiencing growth but lacks visibility into which custom
             - Remove duplicates
             - e.g. removing duplicates from the DimCustomer table from 999+ rows to 99 rows.
     - Disable loading on source query.
-
+- Check cardinality of relationships between tables (Many (fact table) to One (dim table))
 ## 3. Data Model
 
 DimCustomer 
@@ -36,7 +36,7 @@ DimProduct
 - Product (Primary Key)
 - License
 
-DimDate (Date Dimension)
+DimDate (Date Dimension) for time intelligence
 - Date (Primary Key)
 - Year
 - Quarter
@@ -56,9 +56,8 @@ FactSales
 - Discount 
 - Profit
 
-### Relationships
-
 ## 4. DAX Measures
+
 + reasoning! todo
 
 ## 5. Dashboard Design
