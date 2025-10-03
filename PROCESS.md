@@ -99,7 +99,10 @@ KPI Cards:
 - Accent Bar:
     - #D4AF37 (Gold)
 
-- Interactivity
+Reference Labels:
+- Conditional Formatting
+    - YoY Delta -> #2ECC71 for >= 0, #E74C3C for < 0
+
 
 
 ## 6. Insights & Recommendations
